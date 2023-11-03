@@ -12,10 +12,10 @@ const BookPage = () => {
             setFilteredBooks(dummyData);
     }, []);
   
-    const handleAddToCart = (bookId) => {
-      // Implement your "Add to Cart" logic here
-      console.log(`Book with ID ${bookId} added to cart`);
-    };
+    // const handleAddToCart = (bookId) => {
+    //   // Implement your "Add to Cart" logic here
+    //   console.log(`Book with ID ${bookId} added to cart`);
+    // };
     return (
       <div>
         <Typography variant="h4" gutterBottom>
@@ -28,7 +28,7 @@ const BookPage = () => {
           justifyContent: 'center',
         }}>
           {books.map((book) => (
-            <BookCard key={book.id} book={book} onAddToCart={handleAddToCart} />
+            <BookCard key={book.id} book={book} />
           ))}
         </div>
       </div>

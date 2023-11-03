@@ -5,7 +5,7 @@ const dummyData = [
     author: 'Richard P. Feynman',
     genre: 'Physics',
     description: 'A series of lectures by Nobel Prize-winning physicist Richard P. Feynman. Dive into the fascinating world of physics with one of the greatest minds in the field.',
-    coverImage: 'url_to_image_1.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1299.99,
   },
   {
@@ -14,7 +14,7 @@ const dummyData = [
     author: 'Simon Singh',
     genre: 'Programming',
     description: 'Unlock the secrets of codes and ciphers throughout history. From ancient techniques to modern encryption methods, explore the intriguing world of cryptography.',
-    coverImage: 'url_to_image_2.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 799.99,
   },
   {
@@ -23,7 +23,7 @@ const dummyData = [
     author: 'Theodore L. Brown, H. Eugene LeMay Jr., Bruce E. Bursten',
     genre: 'Chemistry',
     description: 'Embark on a journey through the central science of chemistry. Understand the principles that govern matter, reactions, and the composition of substances.',
-    coverImage: 'url_to_image_3.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1099.99,
   },
   {
@@ -32,7 +32,7 @@ const dummyData = [
     author: 'Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein',
     genre: 'Programming',
     description: 'A comprehensive guide to algorithms, a cornerstone in computer science. Master the art of designing and analyzing algorithms for efficient problem-solving.',
-    coverImage: 'url_to_image_4.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 899.99,
   },
   {
@@ -41,7 +41,7 @@ const dummyData = [
     author: 'Neil deGrasse Tyson',
     genre: 'Physics',
     description: 'Neil deGrasse Tyson breaks down the complexities of astrophysics for young readers. Explore the wonders of the cosmos in an engaging and accessible way.',
-    coverImage: 'url_to_image_5.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1299.99,
   },
   {
@@ -50,7 +50,7 @@ const dummyData = [
     author: 'Robert C. Martin',
     genre: 'Programming',
     description: 'Become a master of writing clean and maintainable code. Robert C. Martin shares principles and practices for software craftsmanship.',
-    coverImage: 'url_to_image_6.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 699.99,
   },
   {
@@ -59,7 +59,7 @@ const dummyData = [
     author: 'K. Peter C. Vollhardt, Neil E. Schore',
     genre: 'Chemistry',
     description: 'Explore the intricacies of organic chemistry. Understand the structure and function of organic compounds in this comprehensive guide.',
-    coverImage: 'url_to_image_7.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1199.99,
   },
   {
@@ -68,7 +68,7 @@ const dummyData = [
     author: 'Brian W. Kernighan, Dennis M. Ritchie',
     genre: 'Programming',
     description: 'The classic book that introduced the world to the C programming language. Learn the foundations of one of the most influential programming languages.',
-    coverImage: 'url_to_image_8.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 999.99,
   },
   {
@@ -77,7 +77,7 @@ const dummyData = [
     author: 'Michio Kaku',
     genre: 'Physics',
     description: 'Join Michio Kaku on a journey into the realm of the impossible. Explore concepts like time travel, teleportation, and parallel universes in this captivating exploration.',
-    coverImage: 'url_to_image_9.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1399.99,
   },
   {
@@ -86,7 +86,7 @@ const dummyData = [
     author: 'Foster Provost, Tom Fawcett',
     genre: 'Programming',
     description: 'Bridge the gap between data science and business decisions. Foster Provost and Tom Fawcett provide insights into leveraging data for strategic decision-making.',
-    coverImage: 'url_to_image_10.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 899.99,
   },
   {
@@ -95,7 +95,7 @@ const dummyData = [
     author: 'Gary L. Miessler, Paul J. Fischer, Donald A. Tarr',
     genre: 'Chemistry',
     description: 'Delve into the principles of inorganic chemistry. Gain a deep understanding of the structure and behavior of inorganic compounds.',
-    coverImage: 'url_to_image_11.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1299.99,
   },
   {
@@ -104,7 +104,7 @@ const dummyData = [
     author: 'Marijn Haverbeke',
     genre: 'Programming',
     description: 'Learn JavaScript in an eloquent and engaging way. Marijn Haverbeke takes you through the fundamental concepts and features of the language.',
-    coverImage: 'url_to_image_12.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 749.99,
   },
   {
@@ -113,7 +113,7 @@ const dummyData = [
     author: 'Kip S. Thorne',
     genre: 'Physics',
     description: 'Embark on a fascinating journey into the mysteries of black holes and the fabric of spacetime. Kip S. Thorne guides you through the wonders of the universe.',
-    coverImage: 'url_to_image_13.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1099.99,
   },
   {
@@ -122,7 +122,7 @@ const dummyData = [
     author: 'Andrew Ng',
     genre: 'Programming',
     description: 'Guidance for machine learning practitioners on building effective systems. Andrew Ng shares insights and strategies for successful machine learning projects.',
-    coverImage: 'url_to_image_14.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1199.99,
   },
   {
@@ -131,7 +131,7 @@ const dummyData = [
     author: 'Donald Voet, Judith G. Voet, Charlotte W. Pratt',
     genre: 'Chemistry',
     description: 'Explore the fundamental principles of biochemistry and their applications. Donald Voet, Judith G. Voet, and Charlotte W. Pratt provide a comprehensive overview.',
-    coverImage: 'url_to_image_15.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 949.99,
   },
   {
@@ -140,7 +140,7 @@ const dummyData = [
     author: 'Andrew Hunt, David Thomas',
     genre: 'Programming',
     description: 'Embark on your journey to mastery with this classic book on programming. Andrew Hunt and David Thomas share practical advice for effective software development.',
-    coverImage: 'url_to_image_16.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1049.99,
   },
   {
@@ -149,7 +149,7 @@ const dummyData = [
     author: 'Carlo Rovelli',
     genre: 'Physics',
     description: 'Experience the beauty and wonder of physics in seven brief lessons. Carlo Rovelli provides a poetic exploration of the universe and its mysteries.',
-    coverImage: 'url_to_image_17.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 799.99,
   },
   {
@@ -158,7 +158,7 @@ const dummyData = [
     author: 'Mark Pilgrim',
     genre: 'Programming',
     description: 'Immerse yourself in the world of Python 3 with this comprehensive guide. Mark Pilgrim provides insights and examples for mastering the Python programming language.',
-    coverImage: 'url_to_image_18.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1399.99,
   },
   {
@@ -167,7 +167,7 @@ const dummyData = [
     author: 'Nouredine Zettili',
     genre: 'Physics',
     description: 'Gain a deep understanding of quantum mechanics and its practical applications. Nouredine Zettili explores the concepts that shape the quantum world.',
-    coverImage: 'url_to_image_19.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 999.99,
   },
   {
@@ -176,7 +176,7 @@ const dummyData = [
     author: 'Ethan Brown',
     genre: 'Programming',
     description: 'Learn web development using Node.js and Express. Ethan Brown guides you through building scalable and efficient web applications.',
-    coverImage: 'url_to_image_20.jpg',
+    coverImage: 'https://images-cdn.ubuy.co.in/63a1eebf47b33059b3084aef-the-feynman-lectures-on-physics-vol.jpg',
     price: 1199.99,
   },
 ];

@@ -1,14 +1,26 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import { Typography } from '@mui/material';
+
 const BookCard = ({ book, onAddToCart }) => {
+  const [isAdded, setAdded] = useState(false);
+
   const navigate = useNavigate();
 
   const handleNavigate = () => {
     navigate(`/bookdetail/${book.id}`);
+  };
+  const handleAddToCart = () => {
+    onAddToCart(book);
+    setAdded(true);
+
+    // Reset the button text after a certain time (e.g., 2 seconds)
+    setTimeout(() => {
+      setAdded(false);
+    }, 2000);
   };
 
   return (
@@ -27,10 +39,11 @@ const BookCard = ({ book, onAddToCart }) => {
         <Button
           variant="contained"
           color="primary"
-          onClick={() => onAddToCart(book)} // Pass the entire book object to onAddToCart
+          onClick={handleAddToCart} // Pass the entire book object to onAddToCart
+          disabled={isAdded} 
           style={{ marginTop: '10px' }}
         >
-          Add to Cart
+          {isAdded ? 'Added' : 'Add to Cart'}
         </Button>
       </CardContent>
     </Card>

@@ -11,21 +11,29 @@ const NavBar = () => {
 
   return (
     <AppBar position="static" style={{ backgroundColor: '#F0F8FF', color: 'black' }}>
-      <Toolbar>
-        <Typography variant="h6" >
+      <Toolbar style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+        }}>
+        <Typography variant="h4" style={{ fontWeight: "600" }}>
         BookStore
         </Typography >
-        <Button onClick={() => handleNavigate('/')} variant="h6" >
+        <Button onClick={() => handleNavigate('/')} variant="h6" onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+          onMouseOut={(e) => (e.target.style.textDecoration = "none")}>
           Home
         </Button >
 
-        <Button onClick={() => handleNavigate('/books')} color="inherit">
+        <Button onClick={() => handleNavigate('/books')} color="inherit" onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+          onMouseOut={(e) => (e.target.style.textDecoration = "none")}>
           Books
         </Button>
-        <Button onClick={() => handleNavigate('/authors')} color="inherit">
+        <Button onClick={() => handleNavigate('/authors')} color="inherit" onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+          onMouseOut={(e) => (e.target.style.textDecoration = "none")}>
           Authors
         </Button>
-        <Button onClick={() => handleNavigate('/cart')} color="inherit">
+        <Button onClick={() => handleNavigate('/cart')} color="inherit" onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+          onMouseOut={(e) => (e.target.style.textDecoration = "none")}>
           Cart
         </Button>
        <LoginButton/>

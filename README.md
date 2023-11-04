@@ -16,7 +16,7 @@ Run the project:
 ### `npm start`
 
 Runs the app in the development mode.\
-Demo: [myBookStore]([http://localhost:3000](https://cheerful-sprite-bf7725.netlify.app/))
+Demo: [myBookStore](https://cheerful-sprite-bf7725.netlify.app/)
 
 ### `npm run build`
 

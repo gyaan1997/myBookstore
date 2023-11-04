@@ -7,8 +7,9 @@ import Home from './Pages/Home';
 import Books from './Pages/Books';
 import BookDetail from './Pages/BookDetail';
 import Authors from './Pages/Authors';
-import { Cart } from './Pages/Cart';
+import Cart from './Components/Cart';
 import NavBar from './Components/Navbar';
+import { CartProvider } from './Context';
 
 const MainLayout = ({ children }) => (
   <div style={{background:'Gainsboro'}}>
@@ -16,6 +17,7 @@ const MainLayout = ({ children }) => (
     {children}
   </div>
 );
+
 
 const AppRouter = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -26,6 +28,7 @@ const AppRouter = () => {
 
   return (
     <Router>
+      <CartProvider>
       <Routes>
         <Route
           path="/"
@@ -49,6 +52,7 @@ const AppRouter = () => {
         />
       
       </Routes>
+      </CartProvider>
     </Router>
   );
 };

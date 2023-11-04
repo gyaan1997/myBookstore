@@ -1,45 +1,45 @@
-import React, { useState, useEffect } from 'react';
+// BookPage.js
+import React, { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import dummyData from '../Configs/dummyData';
 import BookCard from '../Components/BookCard';
-// import FilterBooks from '../Components/Filter';
-import { Link } from 'react-router-dom';
+// import Cart from '../Components/Cart';
+import { useNavigate } from 'react-router-dom';
+import { useCart } from '../Context'; // Import useCart hook
 
 const BookPage = () => {
-    const [books, setBooks] = useState([]);
-  // const[filteredBooks,setFilteredBooks]=useState([]);
-    useEffect(() => {
-   
-        setBooks(dummyData);
-            // setFilteredBooks(dummyData);
-    }, []);
-  
-    // const handleAddToCart = (bookId) => {
-    //   // Implement your "Add to Cart" logic here
-    //   console.log(`Book with ID ${bookId} added to cart`);
-    // };
-    return (
-      <div>
-        <Typography variant="h4" gutterBottom >
-     Find your favourite books here!
-          {/* <FilterBooks /> */}
-        </Typography>
-        <div    style={{
+  const [books, setBooks] = React.useState([]);
+  const navigate = useNavigate();
+  const { addToCart, cartItems } = useCart(); // Use useCart hook to access cart state and addToCart function
+
+  useEffect(() => {
+    setBooks(dummyData);
+  }, []);
+
+  const handleNavigate = () => {
+    navigate('/cart');
+  };
+
+  return (
+    <div>
+      <Typography variant="h4" gutterBottom>
+        Find your favourite books here!
+      </Typography>
+      <div
+        style={{
           display: 'flex',
           flexWrap: 'wrap',
           gap: '20px',
           justifyContent: 'center',
-        }}>
-          {books.map((book) => (
-             <Link key={book.id} to={`/bookdetail/${book.id}`} style={{ textDecoration: 'none' }}>
-             <BookCard book={book} />
-           </Link>
-        
-          ))}
-        </div>
+        }}
+      >
+        {books.map((book) => (
+          <BookCard key={book.id} book={book} onAddToCart={() => addToCart(book)} />
+        ))}
       </div>
-    );
-  };
-  
-  export default BookPage;
-  
+      {/* <Cart cartItems={cartItems} /> */}
+    </div>
+  );
+};
+
+export default BookPage;

@@ -1,10 +1,11 @@
 // BookDetail.js
 import React from 'react';
 
-const BookDetail = () => {
+const BookDetail = ({book}) => {
   return (
     <div>
-      {/* Add your BookDetail content here */}
+      Add your BookDetail content here
+      {book}
     </div>
   );
 };

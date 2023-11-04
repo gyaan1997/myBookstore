@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-
+import LoginButton from './Login';
 const NavBar = () => {
   const navigate = useNavigate();
 
@@ -12,9 +12,12 @@ const NavBar = () => {
   return (
     <AppBar position="static" style={{ backgroundColor: '#F0F8FF', color: 'black' }}>
       <Toolbar>
-        <Typography variant="h6" style={{ flexGrow: 1 }}>
+        <Typography variant="h6" >
+        BookStore
+        </Typography >
+        <Button onClick={() => handleNavigate('/')} variant="h6" >
           Home
-        </Typography>
+        </Button >
 
         <Button onClick={() => handleNavigate('/books')} color="inherit">
           Books
@@ -25,9 +28,7 @@ const NavBar = () => {
         <Button onClick={() => handleNavigate('/cart')} color="inherit">
           Cart
         </Button>
-        <Button onClick={() => handleNavigate('/login')} color="inherit">
-          Login
-        </Button>
+       <LoginButton/>
       </Toolbar>
     </AppBar>
   );

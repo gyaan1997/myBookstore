@@ -20,7 +20,7 @@ const Home = () => {
   console.log(dummyData);
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className={classes.home}>
         <h1>Welcome to the Book Store</h1>
       </div>

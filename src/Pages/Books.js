@@ -2,14 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import dummyData from '../Configs/dummyData';
 import BookCard from '../Components/BookCard';
-import FilterBooks from '../Components/Filter';
+// import FilterBooks from '../Components/Filter';
+import { Link } from 'react-router-dom';
+
 const BookPage = () => {
     const [books, setBooks] = useState([]);
-  const[filteredBooks,setFilteredBooks]=useState([]);
+  // const[filteredBooks,setFilteredBooks]=useState([]);
     useEffect(() => {
    
         setBooks(dummyData);
-            setFilteredBooks(dummyData);
+            // setFilteredBooks(dummyData);
     }, []);
   
     // const handleAddToCart = (bookId) => {
@@ -18,8 +20,9 @@ const BookPage = () => {
     // };
     return (
       <div>
-        <Typography variant="h4" gutterBottom>
-          Book Page
+        <Typography variant="h4" gutterBottom >
+     Find your favourite books here!
+          {/* <FilterBooks /> */}
         </Typography>
         <div    style={{
           display: 'flex',
@@ -28,7 +31,10 @@ const BookPage = () => {
           justifyContent: 'center',
         }}>
           {books.map((book) => (
-            <BookCard key={book.id} book={book} />
+             <Link key={book.id} to={`/bookdetail/${book.id}`} style={{ textDecoration: 'none' }}>
+             <BookCard book={book} />
+           </Link>
+        
           ))}
         </div>
       </div>

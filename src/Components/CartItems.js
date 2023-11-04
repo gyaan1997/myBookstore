@@ -24,7 +24,7 @@ const Cart = ({ cartItems }) => {
                 {item.title}
               </Typography>
               <Typography variant="subtitle1">Author: {item.author}</Typography>
-              <Typography variant="subtitle1">Genre: {item.genre}</Typography>
+              <Typography variant="subtitle1">Genre: {item.price}</Typography>
               <Typography variant="subtitle2">Description: {item.description}</Typography>
             </CardContent>
           </Card>

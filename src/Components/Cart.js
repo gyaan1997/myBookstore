@@ -6,8 +6,6 @@ import { useCart } from '../Context';
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useCart();
-  console.log('Cart items:', cartItems);
-
   const getTotalAmount = () => {
     return cartItems.reduce((total, item) => total + item.price, 0);
   };

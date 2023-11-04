@@ -16,18 +16,21 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    color: 'white',
+    fontWeight: '900',
+    // filter: 'blur(5px)',
+    // WebkitFilter: 'blur(5px)',
   },
 }));
 
 const Home = () => {
   const classes = useStyles();
-  console.log(dummyData);
   return (
     <>
       {/* <NavBar /> */}
       <div className={classes.home}>
      
-      <Typography variant="h2" >Welcome to the Book Store</Typography>
+        <Typography variant="h1">Welcome to the Book Store</Typography>
 
       </div>
     </>

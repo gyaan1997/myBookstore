@@ -6,24 +6,25 @@ import { useNavigate } from "react-router-dom";
 const AuthorsPage = () => {
   const [authors, setAuthors] = useState([]);
   const navigate = useNavigate();
-console.log(navigate)
+
   useEffect(() => {
     setAuthors(dummyData);
   }, []);
-
 
   const handleNavigate = (route) => {
     navigate(route);
   };
 
   return (
-    <div>
-      <Typography variant="h4">Pick your favourite Author!</Typography>
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+      <Typography variant="h4" style={{ width: '100%', textAlign: 'center', marginBottom: '20px' }}>
+        Pick your favourite Author!
+      </Typography>
       {authors.map((author) => (
         <Card
           key={author.id}
-          onClick={() => handleNavigate(`/bookdetail/:${author.id}`)} 
-          style={{ margin: '10px', maxWidth: '300px', cursor: 'pointer' }}
+          onClick={() => handleNavigate(`/bookdetail/${author.id}`)}
+          style={{ width: '300px', margin: '10px', cursor: 'pointer' }}
         >
           <CardContent>
             <Typography variant="h6">{author.author}</Typography>

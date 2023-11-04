@@ -21,18 +21,22 @@ const BookDetailPage = () => {
   return (
     <div>
       <Typography variant="h4">{title}</Typography>
-      <Card style={{ maxWidth: 400, margin: "20px" }}>
+      <Card style={{ maxWidth: 800, margin: "20px" }}>
         <CardMedia
           component="img"
-          height="140"
-          image={coverImage} // Assuming coverImage is the URL of the cover image
+          height="540"
+          image={coverImage}
           alt={title}
         />
+        <div style={{display:"flex"}}>
         <CardContent>
           <Typography variant="h6">Author: {author}</Typography>
           <Typography variant="subtitle1">Genre: {genre}</Typography>
+      
+        
           <Typography variant="body1">Description: {description}</Typography>
         </CardContent>
+        </div>
       </Card>
     </div>
   );

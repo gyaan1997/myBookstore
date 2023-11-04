@@ -21,10 +21,18 @@ const AuthorsPage = () => {
         Pick your favourite Author!
       </Typography>
       {authors.map((author) => (
-        <Card
+          <Card
           key={author.id}
-          onClick={() => handleNavigate(`/bookdetail/${author.id}`)}
-          style={{ width: '300px', margin: '10px', cursor: 'pointer' }}
+          onClick={handleNavigate}
+          style={{
+            width: '300px',
+            margin: '10px',
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
         >
           <CardContent>
             <Typography variant="h6">{author.author}</Typography>

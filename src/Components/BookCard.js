@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-
+import { Typography } from '@mui/material';
 const BookCard = ({ book, onAddToCart }) => {
   const navigate = useNavigate();
 
@@ -21,6 +21,9 @@ const BookCard = ({ book, onAddToCart }) => {
             style={{ maxWidth: '100%', maxHeight: '200px', objectFit: 'cover', borderRadius: '8px' }}
           />
         </div>
+        <Typography variant="subtitle1" style={{ marginTop: '10px' }}>
+          Price: ${book.price} 
+        </Typography>
         <Button
           variant="contained"
           color="primary"

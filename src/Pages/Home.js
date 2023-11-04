@@ -1,6 +1,4 @@
 import React from "react";
-import dummyData from "../Configs/dummyData";
-import NavBar from "../Components/Navbar";
 import backgroundImage from "../Images/banner1.jpg";
 
 import { makeStyles } from "@mui/styles";
@@ -27,7 +25,6 @@ const Home = () => {
   const classes = useStyles();
   return (
     <>
-      {/* <NavBar /> */}
       <div className={classes.home}>
      
         <Typography variant="h1">Welcome to the Book Store</Typography>

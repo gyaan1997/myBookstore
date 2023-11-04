@@ -11,15 +11,13 @@ const BookPage = () => {
   const [books, setBooks] = React.useState([]);
   const [sortValue, setSortValue] = useState('');
   const navigate = useNavigate();
-  const { addToCart, cartItems } = useCart();
+  const { addToCart } = useCart();
 
   useEffect(() => {
     setBooks(dummyData);
   }, []);
 
-  const handleNavigate = () => {
-    navigate('/cart');
-  };
+
 
   const handleSortChange = (event) => {
     const selectedValue = event.target.value;
@@ -31,9 +29,7 @@ const BookPage = () => {
       // Sort by author's name
       const sortedBooks = [...dummyData].sort((a, b) => a.author.localeCompare(b.author));
       setBooks(sortedBooks);
-    } else {
-      // Handle other sorting options as needed
-    }
+    } 
   };
 
   const uniqueAuthors = [...new Set(books.map((book) => book.author))];

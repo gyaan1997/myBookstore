@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
@@ -34,13 +34,13 @@ const BookCard = ({ book, onAddToCart }) => {
           />
         </div>
         <Typography variant="subtitle1" style={{ marginTop: '10px' }}>
-          Price: ${book.price} 
+          Price: ${book.price}
         </Typography>
         <Button
           variant="contained"
           color="primary"
           onClick={handleAddToCart} // Pass the entire book object to onAddToCart
-          disabled={isAdded} 
+          disabled={isAdded}
           style={{ marginTop: '10px' }}
         >
           {isAdded ? 'Added' : 'Add to Cart'}

@@ -5,7 +5,7 @@ import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import { useAuth0 } from "@auth0/auth0-react";
 import LazyLoad from 'react-lazyload';
-
+import Signup from "../Components/Signup";
 const useStyles = makeStyles((theme) => ({
   home: {
     backgroundImage: `url(https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg)`,
@@ -21,8 +21,6 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     boxSizing: 'border-box',
 
-    // filter: 'blur(5px)',
-    // WebkitFilter: 'blur(5px)',
   },
 }));
 
@@ -37,7 +35,8 @@ const Home = () => {
           {isAuthenticated ?
             <Typography variant="h1">Welcome to the Book Store {user.name.slice(0, 5).toUpperCase()} </Typography>
             : <><Typography variant="h1">Welcome to the Home Page</Typography>
-              <Typography variant="h4" >Please Login to explore more</Typography>
+              <Typography variant="h4" >Please Sign up to explore more</Typography>
+              <Signup />
             </>
           }
         </LazyLoad>

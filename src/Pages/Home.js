@@ -1,22 +1,26 @@
 import React from "react";
-import backgroundImage from "../Images/banner1.jpg";
+// import backgroundImage from "../Images/bgimage2.jpeg";
 
 import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import { useAuth0 } from "@auth0/auth0-react";
+import LazyLoad from 'react-lazyload';
 
 const useStyles = makeStyles((theme) => ({
   home: {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg)`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "120vh",
+    minHeight: "100vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    color: 'rgb(242, 242, 242)',
+    color: 'white',
     fontWeight: '900',
+    overflow: 'hidden',
+    boxSizing: 'border-box',
+
     // filter: 'blur(5px)',
     // WebkitFilter: 'blur(5px)',
   },
@@ -29,12 +33,14 @@ const Home = () => {
   return (
     <>
       <div className={classes.home}>
-
-        {/* <Typography variant="h1">Welcome to the Book Store</Typography> */}
-        {isAuthenticated ?
-          <Typography variant="h1">Welcome to the Book Store {user.name.slice(0, 5).toUpperCase()} </Typography>
-          : <Typography variant="h1">Welcome to the SignUp Page</Typography>
-        }
+        <LazyLoad height={100} offset={50}>
+          {isAuthenticated ?
+            <Typography variant="h1">Welcome to the Book Store {user.name.slice(0, 5).toUpperCase()} </Typography>
+            : <><Typography variant="h1">Welcome to the Home Page</Typography>
+              <Typography variant="h4" >Please Login to explore more</Typography>
+            </>
+          }
+        </LazyLoad>
 
       </div>
     </>

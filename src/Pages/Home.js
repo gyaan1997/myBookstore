@@ -36,7 +36,7 @@ const Home = () => {
             <Typography variant="h1">Welcome to the Book Store {user.name.slice(0, 5).toUpperCase()} </Typography>
             : <><Typography variant="h1">Welcome to the Home Page</Typography>
               <Typography variant="h4" >Please Sign up to explore more</Typography>
-              <Signup />
+              <div style={{ marginTop: "20px" }} ><Signup /></div>
             </>
           }
         </LazyLoad>

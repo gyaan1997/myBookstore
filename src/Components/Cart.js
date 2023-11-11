@@ -6,10 +6,10 @@ import { useCart } from '../Context';
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useCart();
+  console.log("cartitems" + cartItems)
   const getTotalAmount = () => {
-    return cartItems.reduce((total, item) => total + item.price, 0);
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
-
   return (
     <Card style={{ maxWidth: '600px', margin: 'auto', marginTop: '20px', padding: '10px' }}>
       <CardContent>
@@ -22,7 +22,7 @@ const Cart = () => {
               <ListItem key={item.id}>
                 <ListItemText
                   primary={item.title}
-                  secondary={`Price: $${item.price.toFixed(2)}`} // Assuming price is a number
+                  secondary={`Price: $${item.price.toFixed(2)} Quantity: ${item.quantity || 1}`}
                 />
                 <IconButton onClick={() => removeFromCart(item.id)} aria-label="delete" color="secondary">
                   <DeleteIcon />
